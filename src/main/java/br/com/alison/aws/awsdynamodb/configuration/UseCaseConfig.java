@@ -1,6 +1,6 @@
 package br.com.alison.aws.awsdynamodb.configuration;
 
-import br.com.alison.aws.awsdynamodb.core.dataproviders.PersonCreate;
+import br.com.alison.aws.awsdynamodb.core.usecases.person.ports.PersonCreate;
 import br.com.alison.aws.awsdynamodb.core.usecases.person.PersonRegisterUseCase;
 import br.com.alison.aws.awsdynamodb.core.usecases.person.PersonRegisterUseCaseImpl;
 import org.springframework.context.annotation.Bean;

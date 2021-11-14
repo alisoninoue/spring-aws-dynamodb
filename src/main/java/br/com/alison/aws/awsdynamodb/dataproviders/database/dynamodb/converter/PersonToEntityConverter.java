@@ -1,6 +1,7 @@
-package br.com.alison.aws.awsdynamodb.dataproviders.entity;
+package br.com.alison.aws.awsdynamodb.dataproviders.database.dynamodb.converter;
 
 import br.com.alison.aws.awsdynamodb.core.model.Person;
+import br.com.alison.aws.awsdynamodb.dataproviders.database.dynamodb.entity.PersonEntity;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 

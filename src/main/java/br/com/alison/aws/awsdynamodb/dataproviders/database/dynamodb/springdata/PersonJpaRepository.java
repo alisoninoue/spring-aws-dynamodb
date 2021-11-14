@@ -1,6 +1,6 @@
-package br.com.alison.aws.awsdynamodb.dataproviders.springdata;
+package br.com.alison.aws.awsdynamodb.dataproviders.database.dynamodb.springdata;
 
-import br.com.alison.aws.awsdynamodb.dataproviders.entity.PersonEntity;
+import br.com.alison.aws.awsdynamodb.dataproviders.database.dynamodb.entity.PersonEntity;
 import org.socialsignin.spring.data.dynamodb.repository.EnableScan;
 import org.springframework.data.repository.CrudRepository;
 

@@ -1,14 +1,13 @@
 package br.com.alison.aws.awsdynamodb.core.usecases.person;
 
-import br.com.alison.aws.awsdynamodb.core.dataproviders.PersonCreate;
+import br.com.alison.aws.awsdynamodb.core.usecases.person.ports.PersonCreate;
 import br.com.alison.aws.awsdynamodb.core.model.Person;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
@@ -20,12 +19,12 @@ class PersonRegisterUseCaseImplTest {
 
     @Test
     void shouldRegister() {
-        Person person = new Person("123", 1, "Teste");
-        when(repository.create(any())).thenReturn(person);
+        Person personActual = new Person("123", 1, "Teste");
+        when(repository.create(any())).thenReturn(personActual);
 
         PersonRegisterUseCaseImpl personRegisterUseCase = new PersonRegisterUseCaseImpl(repository);
-        Person personRegistered = personRegisterUseCase.register(person);
-        assertThat(person, equalTo(personRegistered));
+        Person personExpected = personRegisterUseCase.register(personActual);
+        assertThat(personActual).isEqualTo(personExpected);
 
     }
 }

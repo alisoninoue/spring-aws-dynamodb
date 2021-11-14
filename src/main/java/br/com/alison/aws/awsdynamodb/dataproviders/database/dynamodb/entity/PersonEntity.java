@@ -1,4 +1,4 @@
-package br.com.alison.aws.awsdynamodb.dataproviders.entity;
+package br.com.alison.aws.awsdynamodb.dataproviders.database.dynamodb.entity;
 
 import br.com.alison.aws.awsdynamodb.core.model.Person;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;

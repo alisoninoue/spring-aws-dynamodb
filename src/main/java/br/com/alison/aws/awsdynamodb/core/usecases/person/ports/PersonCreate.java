@@ -1,4 +1,4 @@
-package br.com.alison.aws.awsdynamodb.core.dataproviders;
+package br.com.alison.aws.awsdynamodb.core.usecases.person.ports;
 
 import br.com.alison.aws.awsdynamodb.core.model.Person;
 

@@ -45,6 +45,12 @@
 			<groupId>io.github.boostchicken</groupId>
 			<artifactId>spring-data-dynamodb</artifactId>
 			<version>${spring-data-dynamodb.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>aws-java-sdk-dynamodb</artifactId>
+					<groupId>com.amazonaws</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
